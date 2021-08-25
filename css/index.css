@@ -1,0 +1,117 @@
+*{
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+}
+
+html,
+body{
+    height: 100%;
+    width: 100%;
+}
+
+.formulario{
+    background-color: #000;
+    border-radius: 10px;
+    padding: 2.5%;
+    margin: 2.5% auto 0 auto;
+}
+
+.formulario-label{
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.formulario-jogador{
+    background-color: #000;
+    border: 1px solid #fff;
+    font-weight: bold;
+    text-align: center;
+    height: 50px;
+    width: 100%;
+    padding: 40px;
+    margin-bottom: 20px;
+}
+
+.formulario-jogador-x{
+    color:#f00;
+}
+
+.formulario-jogador-o{
+    color: #0f0;
+}
+
+.formulario-form{
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    width: 100%;
+}
+
+.formulario-button{
+    background-color: #000;
+    border: 5px solid #fff;
+    display: block;
+    cursor: pointer;
+    color: #fff;
+    font-weight: bold;
+    height: 120px;
+    width: 33.33%;
+}
+
+.formulario-button:hover{
+    background-color: #555;
+}
+
+.formulario-button-x{
+    color: #f00;
+}
+
+.formulario-button-o{
+    color: #0f0;
+}
+
+.formulario-button-x-vitoria{
+    border: 5px solid #f00;
+}
+
+.formulario-button-o-vitoria{
+    border: 5px solid #0f0;
+}
+
+@media (min-width: 0) and (max-width: 500px) {
+    .formulario{
+        width: 90%;
+    }
+
+    .formulario-jogador{
+        font-size: 20px;
+    }
+    
+    .formulario-button{
+        font-size: 50px;
+    }
+}
+
+@media (min-width: 501px){
+    .formulario{
+        width: 500px;
+    }
+
+    .formulario-jogador{
+        font-size: 30px;
+    }
+
+    .formulario-button{
+        font-size: 80px;
+    }
+}
